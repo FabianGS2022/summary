@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    align-items: center;
+}
+
+.container {
+    width: min(375px, 100%);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    overflow: hidden; 
+}
+
+.encabezado {
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: hsl(252, 100%, 67%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.circulo h4 {
+    font-size: 50px;
+}
+
+.circulo h5 {
+    margin-bottom: -70px;
+    margin: 0;
+}
+
+.circulo {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: hsla(256, 72%, 46%, 1);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: linear-gradient(hsl(252, 100%, 67%) ,hsl(241, 81%, 54%));
+}
+.of{
+    justify-content: center;
+    align-items: center;
+}
+.result p{
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#boton {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 70px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+li {
+    display: flex;  
+}
+.reaction {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: hsl(0, 100%, 67%);
+    opacity: 20px;
+    border-radius: 1rem;
+    padding: 15px;
+    margin: 20px;
+
+}
+.memory {
+    background-color: rgba(255, 165, 0, 0.1);
+    color:hsl(39, 100%, 56%);
+    border-radius: 1rem;
+    padding: 15px;
+    margin: 20px;
+}
+
+.verbal {
+    background-color: rgba(0, 128, 0, 0.1);
+    color: hsl(166, 100%, 37%);
+    border-radius: 1rem;
+    padding: 15px;
+    margin: 20px;
+}
+
+.visual {
+    background-color: rgba(0, 0, 255, 0.1);
+    color:  hsl(234, 85%, 45%);
+    border-radius: 1rem;
+    padding: 15px;
+    margin: 20px;
+}
+
+.numero {
+    flex: 1;
+    text-align: right;
+    color: black;
+}
+
+.summary {
+    padding: 10px;
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+img{
+    margin-right: 5px;
+}
+.text p{
+    margin: 20px;
+}
+.text h4{
+    margin: 20px;
+    font-size: 25px;
+}
+.gris{
+    color: gray;
+}
+@media screen and (min-width: 600px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 20px;
+        box-shadow: 1rem 1rem 50px rgba(0, 0, 255, 0.2); 
+    }
+    .encabezado{
+        border-radius: 20px;
+    }
+}
